@@ -1,0 +1,87 @@
+{
+  "config": {
+    "dataset_dir": "E:\\Education\\Top-up\\Project\\PlantCare-AI\\ai-model\\dataset\\processed",
+    "model_path": "E:\\Education\\Top-up\\Project\\PlantCare-AI\\ai-model\\trained_model\\plant_disease_model.keras",
+    "class_names_path": "E:\\Education\\Top-up\\Project\\PlantCare-AI\\ai-model\\trained_model\\class_names.json",
+    "history_path": "E:\\Education\\Top-up\\Project\\PlantCare-AI\\ai-model\\trained_model\\training_history.json",
+    "epochs": 3,
+    "fine_tune_epochs": 2,
+    "fine_tune_at": 100,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "fine_tune_lr": 1e-05,
+    "dropout_rate": 0.3,
+    "patience": 4,
+    "seed": 42,
+    "weights": "imagenet"
+  },
+  "num_classes": 15,
+  "class_names": [
+    "Pepper__bell___Bacterial_spot",
+    "Pepper__bell___healthy",
+    "Potato___Early_blight",
+    "Potato___Late_blight",
+    "Potato___healthy",
+    "Tomato_Bacterial_spot",
+    "Tomato_Early_blight",
+    "Tomato_Late_blight",
+    "Tomato_Leaf_Mold",
+    "Tomato_Septoria_leaf_spot",
+    "Tomato_Spider_mites_Two_spotted_spider_mite",
+    "Tomato__Target_Spot",
+    "Tomato__Tomato_YellowLeaf__Curl_Virus",
+    "Tomato__Tomato_mosaic_virus",
+    "Tomato_healthy"
+  ],
+  "best_val_accuracy": 0.8704361915588379,
+  "fine_tune_unfrozen_layers": 36,
+  "stage1_history": {
+    "accuracy": [
+      0.6698296070098877,
+      0.7989333868026733,
+      0.8305859565734863
+    ],
+    "loss": [
+      1.034116268157959,
+      0.6009424328804016,
+      0.5145038366317749
+    ],
+    "val_accuracy": [
+      0.7938610911369324,
+      0.8219709396362305,
+      0.8252019286155701
+    ],
+    "val_loss": [
+      0.6401256918907166,
+      0.5366983413696289,
+      0.49943220615386963
+    ],
+    "learning_rate": [
+      0.0010000000474974513,
+      0.0010000000474974513,
+      0.0010000000474974513
+    ]
+  },
+  "stage2_history": {
+    "accuracy": [
+      0.8639701008796692,
+      0.8962460160255432
+    ],
+    "loss": [
+      0.3978937566280365,
+      0.31269341707229614
+    ],
+    "val_accuracy": [
+      0.8630048632621765,
+      0.8704361915588379
+    ],
+    "val_loss": [
+      0.3992202877998352,
+      0.3638528287410736
+    ],
+    "learning_rate": [
+      9.999999747378752e-06,
+      9.999999747378752e-06
+    ]
+  }
+}

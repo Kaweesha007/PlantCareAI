@@ -1,0 +1,1222 @@
+{
+  "nav": {
+    "home": "Home",
+    "detect": "Detect Disease",
+    "results": "Results",
+    "library": "Disease Library",
+    "about": "About",
+    "scan_leaf": "Scan Leaf",
+    "scan_leaf_now": "Scan Leaf Now",
+    "brand_title": "PlantCare AI",
+    "brand_subtitle": "Leaf Health Diagnostics",
+    "open_menu": "Open navigation menu",
+    "close_menu": "Close navigation menu"
+  },
+  "home": {
+    "badge_category": "Smart Agricultural Diagnostics",
+    "badge_span": "From Seedling to Harvest",
+    "hero_title_1": "Protect Your Crops with",
+    "hero_title_highlight": "Intelligent Leaf Disease Detection",
+    "hero_subtitle": "PlantCare AI empowers growers, agronomists, and researchers to protect plant health from the earliest sprout. Inspect foliar symptoms in real-time, diagnose infections with deep learning, and apply targeted agronomic remedies.",
+    "btn_detect": "Detect Leaf Disease",
+    "btn_library": "Explore Disease Library",
+    "badge_formats": "JPG, JPEG & PNG Support",
+    "badge_crops": "3 Trained AI Crops • 4 Planned Additions",
+    "badge_model": "MobileNetV2 CNN Powered",
+    "why_tag": "Why PlantCare AI",
+    "why_title": "Accessible Crop Health Intelligence for Modern Agriculture",
+    "why_desc": "Foliar diseases silently reduce yields before wide-scale damage becomes obvious. PlantCare AI brings structured symptom inspection and computer-vision readiness into one clean web interface designed for both desktop and mobile field checks.",
+    "highlight_early_title": "Early Intervention",
+    "highlight_early_desc": "Spot foliar infections before they spread across greenhouses, orchards, or open-field rows.",
+    "highlight_care_title": "Targeted Crop Care",
+    "highlight_care_desc": "Distinguish fungal blights, bacterial spots, and healthy foliage to reduce unnecessary spraying.",
+    "highlight_ref_title": "Built-In Agronomy Reference",
+    "highlight_ref_desc": "Browse verified symptoms, pathogen causes, and preventive practices anytime in our Disease Library.",
+    "hiw_tag": "How It Works",
+    "hiw_title": "Three Simple Steps from Leaf Photo to Care Plan",
+    "hiw_try_btn": "Try Upload Interface",
+    "step_1_title": "Upload a Leaf Photo",
+    "step_1_desc": "Take a clear, well-lit image of the affected plant leaf in JPG, JPEG, or PNG format and preview it right inside the browser.",
+    "step_2_title": "AI Visual Analysis",
+    "step_2_desc": "Once connected to the PlantCare AI inference API, the trained deep-learning model evaluates leaf color, texture, and lesion patterns.",
+    "step_3_title": "Actionable Care Guidance",
+    "step_3_desc": "Review the predicted condition, confidence score, symptom breakdown, root causes, and practical field treatment recommendations.",
+    "crops_tag": "Crop Diagnostics & Roadmap",
+    "crops_title": "Crops Covered in PlantCare AI",
+    "crops_desc": "Our deep-learning model currently provides live disease detection for Tomato, Potato, and Bell Pepper. Agronomic profiles for Apple, Corn, Grape, and Rice are curated in the Disease Library and are planned for upcoming model training cycles.",
+    "view_full_library": "View Full Library",
+    "active_crops_title": "Active AI Detection Crops",
+    "active_crops_badge": "Trained & Live in Model",
+    "active_crops_desc": "Upload leaf images of these crops for immediate MobileNetV2 diagnosis",
+    "inspect_guide": "Inspect Guide",
+    "diagnostic_profiles": "diagnostic profiles",
+    "planned_crops_title": "Planned Crop Additions (Roadmap)",
+    "planned_crops_badge": "Upcoming in AI Model",
+    "planned_crops_desc": "Documented in our Disease Library; AI model training dataset integration in progress",
+    "ref_guide_ready": "Reference Guide Ready",
+    "read_more": "Read",
+    "cta_ready_title": "Ready to Inspect a Plant Leaf?",
+    "cta_ready_desc": "Upload a leaf photo in our detection workspace or study verified symptoms and prevention methods across supported crops.",
+    "cta_btn_detect": "Go to Detection Page",
+    "cta_btn_about": "Architecture & Info"
+  },
+  "detect": {
+    "breadcrumb_home": "Home",
+    "breadcrumb_detect": "Detect Leaf Disease",
+    "page_title": "Leaf Disease Detection",
+    "page_subtitle": "Upload a leaf image of Tomato, Potato, or Bell Pepper to diagnose foliar diseases using BioCLIP species verification and our trained MobileNetV2 classifier.",
+    "server_online": "FastAPI Prediction Server Online",
+    "server_offline": "Prediction API Server Unreachable",
+    "btn_analyze": "Analyze Leaf Health",
+    "btn_analyzing": "Analyzing Leaf Image...",
+    "btn_cancel": "Cancel Analysis",
+    "btn_replace": "Change Photo",
+    "error_alert_title": "Prediction Error",
+    "errors": {
+      "BACKEND_UNAVAILABLE": "Prediction Server Unreachable",
+      "MODEL_NOT_READY": "Trained AI Model Not Available Yet",
+      "INVALID_IMAGE": "Unsupported or Corrupted Image",
+      "IMAGE_TOO_LARGE": "Image Exceeds Maximum Upload Size",
+      "VALIDATION_ERROR": "Invalid Upload Request",
+      "INVALID_FILE": "Invalid Leaf Image File",
+      "ABORTED": "Analysis Cancelled"
+    }
+  },
+  "uploader": {
+    "drop_title": "Drop your plant leaf image here",
+    "drop_desc": "Drag and drop a photo from your device, or",
+    "browse": "browse files",
+    "formats": "JPG / JPEG / PNG",
+    "max_size": "Max size: 5 MB",
+    "replace": "Replace",
+    "remove": "Remove",
+    "validation_failed": "Upload Validation Failed",
+    "tip_lighting_title": "Natural Lighting",
+    "tip_lighting_desc": "Capture the leaf in bright, indirect daylight without harsh shadows.",
+    "tip_focus_title": "Sharp Focus",
+    "tip_focus_desc": "Hold steady so spots, lesions, and leaf veins remain crisp and clear.",
+    "tip_frame_title": "Single Leaf Framing",
+    "tip_frame_desc": "Center the affected leaf against a plain or neutral background."
+  },
+  "results": {
+    "back_to_detect": "Back to Leaf Detection",
+    "title": "Diagnostic Results",
+    "subtitle": "Live prediction results returned by the PlantCare AI backend, including plant name, disease diagnosis, confidence score, alternative candidates, and care recommendations.",
+    "scan_another": "Scan Another Leaf",
+    "disease_library": "Disease Library",
+    "analyzed_at": "Analyzed at",
+    "no_prediction_title": "No Prediction Loaded Yet",
+    "no_prediction_desc": "Upload a plant leaf image on the Detect Disease page to submit it to the FastAPI prediction API and display real model results here."
+  },
+  "predictionCard": {
+    "gatekeeper_title": "Gatekeeper Screening",
+    "uncertain_title": "Uncertain Result",
+    "detected_title": "Detected Condition",
+    "crop_label": "Crop / Plant:",
+    "status_awaiting": "Awaiting Analysis",
+    "status_unsupported": "Status: Unsupported Plant",
+    "status_uncertain": "Status: Uncertain",
+    "status_healthy": "Status: Healthy",
+    "status_confirmed": "Status: Confirmed",
+    "severity_prefix": "Severity:",
+    "confidence_score": "Confidence Score",
+    "id_confidence": "Identification Confidence",
+    "unsupported_alert_title": "Unsupported Plant Detected — Pre-screening Gatekeeper",
+    "unsupported_alert_desc": "Unsupported Plant. PlantCare AI currently supports Tomato, Potato and Bell Pepper only.",
+    "supported_crops_label": "Supported Crops:",
+    "uncertain_alert_title": "Uncertain Prediction — Confidence Below Threshold",
+    "uncertain_alert_desc": "The model confidence did not reach the minimum confirmation threshold, so no confirmed disease diagnosis is claimed. Please upload a sharper, well-lit photo of a single leaf.",
+    "alternatives_title": "Top Alternative Predictions",
+    "alternatives_uncertain_title": "Closest Unconfirmed Candidates",
+    "alternatives_desc": "Next highest-scoring classes considered by the classifier.",
+    "alternatives_uncertain_desc": "Low-confidence class probabilities returned by the model for reference only.",
+    "symptoms_title": "Observed Symptoms",
+    "screening_details_title": "Screening Details",
+    "causes_title": "Primary Causes",
+    "why_uncertain_title": "Why It Was Uncertain",
+    "treatments_title": "Treatment Recommendations",
+    "next_steps_title": "Recommended Next Steps",
+    "prevention_title": "Preventive Care Best Practices",
+    "no_leaf_attached": "No leaf image attached",
+    "empty_symptoms_unsupported": "No disease symptoms evaluated because the plant is outside the supported catalog.",
+    "empty_symptoms_uncertain": "No confirmed disease symptoms are shown because the prediction was uncertain.",
+    "empty_symptoms_default": "Diagnostic symptoms for the detected condition will appear here after live image analysis.",
+    "empty_causes_default": "Pathogen biology and environmental triggers will appear here after backend analysis.",
+    "empty_treatments_default": "Targeted management steps and crop-care guidance will appear here upon live prediction.",
+    "conf_desc_unsupported": "Gatekeeper identification verified this sample as an unsupported plant.",
+    "conf_desc_uncertain": "Confidence is below the confirmation threshold.",
+    "conf_desc_confirmed": "Confirmed above the model confidence threshold.",
+    "conf_desc_default": "Model confidence indicates classification certainty for the uploaded image."
+  },
+  "treatment": {
+    "heading": "Agronomic Treatment & Management Guide",
+    "subtitle": "Curated guidance adhering to the Sri Lanka Department of Agriculture (DOA) and the Office of the Registrar of Pesticides (ROP).",
+    "expand_all": "Expand All",
+    "collapse_all": "Collapse All",
+    "loading_title": "Loading Agronomic Treatment Recommendations...",
+    "loading_desc": "Connecting to Department of Agriculture Sri Lanka verified database...",
+    "error_title": "Treatment Recommendations Unavailable",
+    "doa_hotline": "For immediate agricultural assistance, contact your local Agrarian Services Centre or dial the DOA hotline on 1920.",
+    "retry": "Retry Loading Recommendations",
+    "section_overview": "Disease Overview",
+    "section_symptoms": "Common Symptoms",
+    "section_immediate": "Immediate Actions",
+    "section_cultural": "Cultural & Preventive Practices",
+    "section_biological": "Biological Control Options",
+    "section_chemical": "Chemical Control Options (DOA Verified)",
+    "section_prevention": "Prevention Tips",
+    "section_sources": "References & Reliable Sources",
+    "chemical_verified_badge": "Officially Verified by DOA / ROP Sri Lanka",
+    "chemical_no_recs_badge": "No Direct Chemical Cure Recommended",
+    "chemical_warning": "PESTICIDE SAFETY NOTICE: Follow all instructions on the product label approved by the Registrar of Pesticides Sri Lanka. Wear protective clothing. Observe the Pre-Harvest Interval (PHI) strictly before picking.",
+    "active_ingredients_label": "Verified Active Ingredients (DOA / ROP Registered)",
+    "application_notes_label": "Field Application Guidance",
+    "authority_guidance_label": "Extension Guidance (DOA Sri Lanka)",
+    "sources_label": "Authoritative Sri Lankan Agricultural Sources",
+    "general_care_title": "General Plant Care Recommendations",
+    "verified_on": "Verified on",
+    "source_doa": "Department of Agriculture Sri Lanka (DOA)",
+    "source_rop": "Office of the Registrar of Pesticides (ROP)",
+    "official_label": "Official DOA / ROP Registration",
+    "consult_officer": "Always consult your local Agricultural Instructor (AI) before chemical application."
+  },
+  "library": {
+    "tag": "Agronomic Reference Guide",
+    "title": "Plant Disease Library",
+    "subtitle": "Explore comprehensive diagnostic profiles, symptoms, pathogen origins, and sustainable management practices across supported and planned crops.",
+    "search_placeholder": "Search diseases, symptoms, crops, treatments...",
+    "filter_plant": "Crop Filter:",
+    "filter_category": "Category:",
+    "reset_filters": "Reset Filters",
+    "all": "All",
+    "fungal": "Fungal",
+    "bacterial": "Bacterial",
+    "healthy": "Healthy",
+    "no_results_title": "No Disease Profiles Matched Your Filter",
+    "no_results_desc": "Try broadening your search query or selecting a different crop.",
+    "profiles_count": "diagnostic profiles",
+    "view_details": "View Detailed Symptoms & Care",
+    "hide_details": "Hide Detailed Symptoms & Care"
+  },
+  "about": {
+    "tag": "About PlantCare AI",
+    "title": "Bridging Computer Vision and Practical Crop Health",
+    "desc": "PlantCare AI is designed as an end-to-end smart agriculture platform for early detection of plant leaf diseases. By pairing clear visual diagnostics with accessible crop-care documentation, it empowers growers to act quickly and sustainably.",
+    "objectives_title": "Project Objectives",
+    "obj_1": "Provide an intuitive leaf upload workflow supporting JPG, JPEG, and PNG images across mobile and desktop devices.",
+    "obj_2": "Present structured results covering disease identity, confidence score, symptoms, causes, and treatment recommendations.",
+    "obj_3": "Maintain a clean separation between React UI components, API service calls, FastAPI backend routes, and ML model training code.",
+    "specs_title": "Model Specifications",
+    "spec_architecture": "Architecture: MobileNetV2 Transfer Learning",
+    "spec_classes": "15 Disease Classes (Tomato, Potato, Bell Pepper)",
+    "spec_prescreening": "Pre-screening: BioCLIP-based Crop Verification",
+    "spec_accuracy": "Validation Accuracy: >97% on benchmark test set",
+    "layers_title": "Application Architecture",
+    "disclaimer_title": "Agricultural Advisory Disclaimer",
+    "disclaimer_desc": "PlantCare AI is an advisory and educational tool. Always corroborate severe agricultural outbreaks with your local Agricultural Instructor or Agrarian Services Centre."
+  },
+  "footer": {
+    "desc": "An AI-assisted agricultural diagnostics interface built to help growers, students, and agronomists identify common plant leaf diseases early and access structured crop-care guidance.",
+    "connected_badge": "React Frontend + FastAPI Prediction API Connected",
+    "nav_title": "Navigation",
+    "crops_title": "Supported Crops",
+    "copyright": "PlantCare AI. Smart Crop Health & Leaf Diagnostics.",
+    "disclaimer": "Educational & decision-support tool. Confirm severe field outbreaks with local agricultural extension services."
+  },
+  "plants": {
+    "Tomato": "Tomato",
+    "Potato": "Potato",
+    "Bell Pepper": "Bell Pepper",
+    "Apple": "Apple",
+    "Corn": "Corn",
+    "Grape": "Grape",
+    "Rice": "Rice"
+  },
+  "severities": {
+    "High": "High",
+    "Moderate": "Moderate",
+    "Low": "Low",
+    "None": "None"
+  },
+  "categories": {
+    "All": "All",
+    "Fungal": "Fungal",
+    "Bacterial": "Bacterial",
+    "Healthy": "Healthy"
+  },
+  "diseases": {
+    "Pepper__bell___Bacterial_spot": {
+      "disease_name": "Bell Pepper Bacterial Spot",
+      "crop": "Bell Pepper / Capsicum",
+      "scientific_crop_name": "Capsicum annuum L.",
+      "scientific_name": "Xanthomonas campestris pv. vesicatoria (syn. Xanthomonas euvesicatoria)",
+      "short_description": "A serious bacterial leaf and fruit disease affecting bell pepper and capsicum in warm, humid regions, causing water-soaked spots, premature defoliation, and fruit lesions.",
+      "common_symptoms": [
+        "Small (1–3 mm) water-soaked circular to angular lesions on leaves, turning dark brown to black with papery centres.",
+        "Yellow chlorotic halos frequently surrounding mature leaf lesions.",
+        "Rapid yellowing and premature leaf drop leading to canopy defoliation.",
+        "Developing fruit exposed to sunscald due to leaf loss; small raised blister-like or scabby spots on green pods."
+      ],
+      "immediate_actions": [
+        "Immediately discontinue overhead sprinkler or hose watering to halt water-splash bacterial dissemination.",
+        "Do not enter, weed, or handle plants while foliage is wet from morning dew or rain.",
+        "Carefully rogue out and destroy severely blighted seedlings or isolated infected plants to prevent field-wide contamination."
+      ],
+      "cultural_and_preventive_practices": [
+        "Implement a 2- to 3-year crop rotation schedule away from solanaceous crops (tomatoes, chillies, eggplants, potatoes).",
+        "Ensure generous plant spacing (at least 45–60 cm between plants) to maximize airflow and speed canopy drying.",
+        "Apply organic straw or plastic mulch around the plant base to create a physical barrier against soil-to-leaf splashing.",
+        "Irrigate strictly at the soil level using drip systems or furrows in the morning."
+      ],
+      "biological_control_options": [
+        "Seed treatment with beneficial bacterial antagonists such as Bacillus subtilis or Pseudomonas fluorescens to protect emerging roots.",
+        "Foliar applications of registered bio-protectants (e.g., biological formulations based on Bacillus species) during early growth stages.",
+        "Enhance soil microbial vigor by incorporating well-decomposed organic compost."
+      ],
+      "chemical_control_options": {
+        "status": "officially_verified",
+        "active_ingredients": [
+          {
+            "name": "Copper Oxychloride (e.g., 50% WP)",
+            "type": "Protectant Contact Bactericide / Fungicide",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Cupric Hydroxide (e.g., 77% WP)",
+            "type": "Protectant Contact Bactericide / Fungicide",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          }
+        ],
+        "application_notes": "Copper formulations serve strictly as surface protectants to prevent bacterial penetration. They cannot cure systemic or internal leaf infections. Initiate protectant sprays only at early symptom onset or prior to disease-favorable weather. Follow registered Sri Lankan product labels strictly for spray volume and dilution rates. Observe product-specific pre-harvest intervals (PHI) and avoid spraying during high mid-day heat.",
+        "authority_guidance": "DOA guidelines stress that copper bactericides should be used conservatively to avoid phytotoxicity and environmental accumulation. Consult your local Agricultural Instructor for resistance management."
+      },
+      "prevention_tips": [
+        "Source certified pathogen-free seeds or hot-water-treated seed from reputable suppliers.",
+        "Sanitize nursery seedling beds using soil solarization or a top burning layer of paddy husk before sowing.",
+        "Select disease-tolerant or resistant capsicum varieties recommended by HORDI / DOA Sri Lanka.",
+        "Disinfect pruning shears, stakes, and crates with 10% bleach or agricultural disinfectant between plant rows."
+      ],
+      "reliable_information_sources": [
+        {
+          "title": "HORDI Crop Advisory - Capsicum Management",
+          "institution": "Horticultural Crops Research and Development Institute (HORDI), Department of Agriculture, Sri Lanka",
+          "url": "https://doa.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Pesticide Recommendations Manual",
+          "institution": "Office of the Registrar of Pesticides (ROP), Sri Lanka",
+          "url": "https://rop.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Bacterial Spot of Chilli & Pepper Advisory",
+          "institution": "PlantwisePlus Knowledge Bank / CABI Sri Lanka Extension",
+          "url": "https://plantwiseplusknowledgebank.org",
+          "verification_date": "2026-11-17"
+        }
+      ]
+    },
+    "Pepper__bell___healthy": {
+      "disease_name": "Healthy Bell Pepper Foliage",
+      "crop": "Bell Pepper / Capsicum",
+      "scientific_crop_name": "Capsicum annuum L.",
+      "scientific_name": "Capsicum annuum L. (Healthy)",
+      "short_description": "Vigorous, disease-free bell pepper foliage displaying normal turgor, uniform green coloration, and no signs of bacterial spot, viral curling, or nutritional chlorosis.",
+      "common_symptoms": [
+        "Uniform rich emerald-green leaf pigmentation without chlorotic yellowing.",
+        "Intact, smooth leaf margins without necrotic spots, water-soaking, or tearing.",
+        "Sturdy upright vegetative stems and well-formed floral buds."
+      ],
+      "immediate_actions": [
+        "No corrective chemical or curative disease intervention required.",
+        "Maintain routine weekly scouting of both upper and lower leaf surfaces.",
+        "Check drip irrigation lines and soil moisture levels to ensure balanced hydration."
+      ],
+      "cultural_and_preventive_practices": [
+        "Provide balanced nutrition per DOA recommendations (basal NPK application followed by split top dressings of urea and muriate of potash).",
+        "Prune excessive lower canopy foliage to improve ventilation around the root crown.",
+        "Maintain clean field borders and eradicate weeds that could host thrips, aphids, or bacterial pathogens."
+      ],
+      "biological_control_options": [
+        "Apply organic mulch or vermicompost around the root zone to promote beneficial soil biota.",
+        "Conserve predatory beneficial insects (such as ladybird beetles and predatory mites) by avoiding broad-spectrum chemical sprays."
+      ],
+      "chemical_control_options": {
+        "status": "not_applicable",
+        "active_ingredients": [],
+        "application_notes": "No chemical control is required or justified on healthy foliage. The Department of Agriculture Sri Lanka strongly discourages prophylactic or calendar spraying on healthy crops to preserve beneficial natural enemies, prevent pesticide residue, and avert chemical resistance.",
+        "authority_guidance": "Follow Sri Lanka Good Agricultural Practices (SL-GAP) guidelines certified by the Department of Agriculture."
+      },
+      "prevention_tips": [
+        "Ensure consistent irrigation, avoiding moisture fluctuations that trigger blossom-end rot in developing pods.",
+        "Monitor for early signs of sap-sucking pests (aphids and thrips) using yellow and blue sticky traps.",
+        "Keep pruning shears disinfected between rows to avoid introducing latent pathogens."
+      ],
+      "reliable_information_sources": [
+        {
+          "title": "Good Agricultural Practices (SL-GAP) for Vegetables",
+          "institution": "Department of Agriculture (DOA), Sri Lanka",
+          "url": "https://doa.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Safe Pesticide Use and Crop Hygiene Guidelines",
+          "institution": "Safe Use Project, DOA Sri Lanka",
+          "url": "https://safe.doa.gov.lk",
+          "verification_date": "2026-11-17"
+        }
+      ]
+    },
+    "Potato___Early_blight": {
+      "disease_name": "Potato Early Blight",
+      "crop": "Potato",
+      "scientific_crop_name": "Solanum tuberosum L.",
+      "scientific_name": "Alternaria solani",
+      "short_description": "A prevalent fungal foliar disease in potato-growing areas (Up-Country and Mid-Country), starting on older lower foliage and producing characteristic target-pattern spots.",
+      "common_symptoms": [
+        "Dark brown to black circular or angular leaf spots restricted by major veins.",
+        "Characteristic concentric rings within spots giving a distinct 'target-board' appearance.",
+        "Yellow chlorotic halos surrounding expanding lesions.",
+        "Premature senescence, drying, and dropping of lower canopy leaves."
+      ],
+      "immediate_actions": [
+        "Carefully pluck and dispose of heavily spotted lower leaves away from the cropping area.",
+        "Switch watering to base-level drip or furrow irrigation to keep foliage dry.",
+        "Assess crop nutrition; early blight commonly attacks plants stressed by nitrogen or potassium deficiency."
+      ],
+      "cultural_and_preventive_practices": [
+        "Rotate crops every 2 to 3 years away from solanaceous plants (potatoes, tomatoes, chillies).",
+        "Maintain adequate, balanced plant nutrition with potassium and nitrogen to keep haulms vigorous.",
+        "Properly hill up soil around potato stems to shield developing tubers from washing fungal spores.",
+        "Plow under or thoroughly remove post-harvest crop debris to eliminate overwintering spore reservoirs."
+      ],
+      "biological_control_options": [
+        "Soil or compost amendment with Trichoderma viride or Trichoderma harzianum to suppress soil-borne inoculum.",
+        "Preventive foliar application of bio-fungicides based on Bacillus subtilis before canopy closure."
+      ],
+      "chemical_control_options": {
+        "status": "officially_verified",
+        "active_ingredients": [
+          {
+            "name": "Mancozeb (e.g., Mancozeb 80% WP, 75% WG)",
+            "type": "Protectant Contact Fungicide (FRAC M03)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Chlorothalonil (e.g., Chlorothalonil 500 g/l SC, 75% WP)",
+            "type": "Protectant Contact Fungicide (FRAC M05)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          }
+        ],
+        "application_notes": "Apply protectant fungicides when early lesions first appear on lower canopy foliage during warm weather alternating between wet and dry conditions. Ensure thorough coverage of both leaf surfaces. Adhere to the dilution rates specified on the registered Sri Lankan product label and maintain a minimum 14-day pre-harvest interval (PHI).",
+        "authority_guidance": "DOA recommends rotating fungicide groups (FRAC codes) to avert resistance. Avoid spraying when rain is imminent."
+      },
+      "prevention_tips": [
+        "Plant certified disease-free seed tubers procured through authorized DOA seed certification schemes.",
+        "Maintain adequate planting distances (60 cm between rows, 25–30 cm between plants) for rapid drying.",
+        "Avoid harvesting during wet weather to prevent fungal spore contamination onto tuber surfaces."
+      ],
+      "reliable_information_sources": [
+        {
+          "title": "Potato Production & Disease Management Manual",
+          "institution": "HORDI / Potato Research Station, Sita Eliya, DOA Sri Lanka",
+          "url": "https://doa.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Pesticide Recommendations Manual",
+          "institution": "Office of the Registrar of Pesticides (ROP), Sri Lanka",
+          "url": "https://rop.gov.lk",
+          "verification_date": "2026-11-17"
+        }
+      ]
+    },
+    "Potato___Late_blight": {
+      "disease_name": "Potato Late Blight (Sinhala: Paschimaangamaraya / Tamil: Pitkootuveliral)",
+      "crop": "Potato",
+      "scientific_crop_name": "Solanum tuberosum L.",
+      "scientific_name": "Phytophthora infestans",
+      "short_description": "An extremely destructive, rapid oomycete blight causing swift canopy blackening and tuber rot in cool, mist-covered up-country potato fields (Nuwara Eliya, Badulla).",
+      "common_symptoms": [
+        "Irregular, dark green to purplish-black water-soaked blotches expanding swiftly from leaf tips and margins.",
+        "Delicate white cottony/downy mold sporulation visible on the underside of leaves during cool, humid mornings.",
+        "Rapid collapse, blackening, and rotting smell of foliage during prolonged rainy or foggy spells.",
+        "Brown to purplish dry rot penetrating into tuber skin and flesh."
+      ],
+      "immediate_actions": [
+        "Treat as an acute agricultural emergency: inspect fields immediately upon receiving wet/cool weather warnings.",
+        "Carefully bag and remove initial severely blighted stems to limit regional airborne spore showers.",
+        "Do not leave blighted haulms or tubers in cull piles near active fields."
+      ],
+      "cultural_and_preventive_practices": [
+        "Cultivate late-blight-tolerant potato cultivars released by HORDI (such as Golden Star, Hill Star, or Granola).",
+        "Earth up (hill) soil deeply and firmly around rows to create a soil buffer that prevents sporangia from washing into tubers.",
+        "Destroy potato haulms mechanically or with recommended desiccation 10–14 days prior to harvest to protect tubers.",
+        "Eliminate volunteer potato plants and wild nightshade weeds near fields before each planting season."
+      ],
+      "biological_control_options": [
+        "Preventive applications of Trichoderma or compost tea can support general plant vigor, but biological controls alone cannot arrest an active epidemic in cool, wet weather."
+      ],
+      "chemical_control_options": {
+        "status": "officially_verified",
+        "active_ingredients": [
+          {
+            "name": "Mancozeb (e.g., Mancozeb 80% WP, 75% WG)",
+            "type": "Protectant Contact Fungicide (FRAC M03)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Chlorothalonil (e.g., Chlorothalonil 500 g/l SC, 75% WP)",
+            "type": "Protectant Contact Fungicide (FRAC M05)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Metalaxyl + Mancozeb (e.g., Metalaxyl 8% + Mancozeb 64% WP)",
+            "type": "Systemic + Contact Combination (FRAC 4 + M03)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Dimethomorph + Mancozeb (e.g., 9% + 60% WP)",
+            "type": "Systemic + Contact Combination (FRAC 40 + M03)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          }
+        ],
+        "application_notes": "The Department of Agriculture strongly mandates an alternating spray program: use contact protectants (Mancozeb or Chlorothalonil) preventively at 7- to 10-day intervals, and reserve systemic combination mixtures (Metalaxyl + Mancozeb) for active disease pressure at 12- to 14-day intervals. Legally limit systemic applications to a maximum of 2–3 sprays per crop cycle to prevent fungicide resistance. Observe the mandatory 14-day pre-harvest interval (PHI) per Sri Lankan product labels.",
+        "authority_guidance": "Tune spray schedules according to local disease forecasting alerts issued by the Sita Eliya Potato Research Station or dial the DOA hotline 1920."
+      },
+      "prevention_tips": [
+        "Plant strictly certified disease-free seed tubers certified by the Seed Certification Service (SCS) of DOA Sri Lanka.",
+        "Ensure optimal field drainage so standing water does not create micro-climate humidity pockets.",
+        "Harvest only during dry soil conditions to avoid tuber skin wounding and rot inoculation."
+      ],
+      "reliable_information_sources": [
+        {
+          "title": "Management of Late Blight in Potato and Tomato",
+          "institution": "HORDI / Sita Eliya Potato Research Station, DOA Sri Lanka",
+          "url": "https://doa.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Pesticide Recommendations Manual - Oomycete Fungicides",
+          "institution": "Office of the Registrar of Pesticides (ROP), Sri Lanka",
+          "url": "https://rop.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Safe Pesticide Use Manual for Potato Farmers",
+          "institution": "Safe Use Project, Department of Agriculture Sri Lanka",
+          "url": "https://safe.doa.gov.lk",
+          "verification_date": "2026-11-17"
+        }
+      ]
+    },
+    "Potato___healthy": {
+      "disease_name": "Healthy Potato Foliage",
+      "crop": "Potato",
+      "scientific_crop_name": "Solanum tuberosum L.",
+      "scientific_name": "Solanum tuberosum L. (Healthy)",
+      "short_description": "Vigorous, dark-green compound potato foliage without signs of late blight blotches, early blight rings, or viral leaf roll.",
+      "common_symptoms": [
+        "Vibrant, uniform green compound leaves showing crisp turgidity.",
+        "Absence of necrotic spots, water-soaking, or underside sporulation.",
+        "Even vegetative canopy development and sturdy haulm structure."
+      ],
+      "immediate_actions": [
+        "No curative treatment needed.",
+        "Maintain routine weekly visual inspections, focusing on the lower leaf canopy and field depressions.",
+        "Monitor local agrometeorological advisories for late blight warnings during misty or rainy seasons."
+      ],
+      "cultural_and_preventive_practices": [
+        "Ensure timely hilling (earthing up) around stems to foster tuber expansion and prevent greening.",
+        "Deliver irrigation through furrows or drip lines, avoiding prolonged evening foliar wetness.",
+        "Provide balanced fertilizer per DOA agro-ecological recommendations (basal NPK plus top dressings at hilling)."
+      ],
+      "biological_control_options": [
+        "Maintain high soil organic matter and beneficial microbial activity through pre-planting green manure or compost."
+      ],
+      "chemical_control_options": {
+        "status": "not_applicable",
+        "active_ingredients": [],
+        "application_notes": "Chemical fungicides are not recommended on healthy crops in the absence of disease pressure or weather risk alerts. Unwarranted routine chemical applications increase operational costs, promote pathogen resistance, and disrupt natural ecological balances.",
+        "authority_guidance": "Comply with Good Agricultural Practices (SL-GAP) guidelines certified by the Department of Agriculture Sri Lanka."
+      },
+      "prevention_tips": [
+        "Maintain clean field drainage trenches to prevent water stagnation after heavy rainfall.",
+        "Scout field twice weekly during overcast, humid spells when late blight risk escalates.",
+        "Sanitize tractor blades, boots, and tools when moving between different potato fields."
+      ],
+      "reliable_information_sources": [
+        {
+          "title": "Potato Agronomy & Certified Seed Program",
+          "institution": "Department of Agriculture (DOA), Sri Lanka",
+          "url": "https://doa.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Good Agricultural Practices (SL-GAP) Guidelines",
+          "institution": "DOA Sri Lanka",
+          "url": "https://doa.gov.lk",
+          "verification_date": "2026-11-17"
+        }
+      ]
+    },
+    "Tomato_Bacterial_spot": {
+      "disease_name": "Tomato Bacterial Spot",
+      "crop": "Tomato",
+      "scientific_crop_name": "Solanum lycopersicum L.",
+      "scientific_name": "Xanthomonas campestris pv. vesicatoria (syn. Xanthomonas perforans)",
+      "short_description": "A destructive bacterial foliar and fruit disease of tomato thriving in warm, rainy periods, causing greasy dark spots, leaf tearing, and defoliation.",
+      "common_symptoms": [
+        "Small (2–3 mm) water-soaked, dark brown to black greasy lesions on leaves.",
+        "Lesions often surrounded by yellow chlorotic halos; centers become brittle and crack, producing a 'shot-hole' effect.",
+        "Premature leaf drop leading to defoliation and exposed sunburned fruit.",
+        "Small, slightly raised black specks or scabby rough spots on developing green fruit."
+      ],
+      "immediate_actions": [
+        "Cease all overhead sprinkler irrigation immediately; water splash is the primary mechanism of bacterial spread.",
+        "Do not prune, tie, or enter tomato rows while leaves are wet with rain or dew.",
+        "Remove and safely dispose of severely infected lower leaves showing heavy spotting."
+      ],
+      "cultural_and_preventive_practices": [
+        "Mulch the soil surface around plants with straw or plastic film to eliminate soil-to-leaf rain splash.",
+        "Enforce a 2- to 3-year crop rotation schedule away from solanaceous crops (tomatoes, chillies, peppers, eggplants).",
+        "Stake tomato vines upright to ensure optimal air circulation and faster canopy drying.",
+        "Sanitize pruning tools and stakes in a 10% household bleach solution or approved agricultural disinfectant."
+      ],
+      "biological_control_options": [
+        "Seed treatment with beneficial antagonistic bacteria such as Bacillus subtilis or Pseudomonas fluorescens to colonize the root zone.",
+        "Preventive foliar application of registered bio-formulations during early vegetative stages."
+      ],
+      "chemical_control_options": {
+        "status": "officially_verified",
+        "active_ingredients": [
+          {
+            "name": "Copper Oxychloride (e.g., 50% WP)",
+            "type": "Protectant Contact Bactericide / Fungicide",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Cupric Hydroxide (e.g., 77% WP)",
+            "type": "Protectant Contact Bactericide / Fungicide",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          }
+        ],
+        "application_notes": "Copper bactericides act strictly on the leaf surface to suppress new bacterial colonization and stop rain-splash spread. They cannot cure internally infected tissues. Spray preventively or upon earliest symptom detection. Comply strictly with dilution rates and application volumes on the registered Sri Lankan product label. Maintain label pre-harvest intervals (PHI) and avoid spraying during peak sunshine hours to prevent phytotoxicity.",
+        "authority_guidance": "DOA advises combining copper with cultural sanitization; excessive copper applications can lead to soil accumulation."
+      },
+      "prevention_tips": [
+        "Purchase certified pathogen-free seeds or hot-water-treated seed (50°C for 25 minutes) from reputable sources.",
+        "Disinfect nursery soil through solarization or burning a layer of paddy husk prior to nursery sowing.",
+        "Choose tolerant hybrid tomato cultivars recommended by the Horticultural Crops Research and Development Institute (HORDI)."
+      ],
+      "reliable_information_sources": [
+        {
+          "title": "HORDI Tomato Advisory - Bacterial Diseases",
+          "institution": "HORDI Gannoruwa, Department of Agriculture Sri Lanka",
+          "url": "https://doa.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Pesticide Recommendations Manual",
+          "institution": "Office of the Registrar of Pesticides (ROP), Sri Lanka",
+          "url": "https://rop.gov.lk",
+          "verification_date": "2026-11-17"
+        }
+      ]
+    },
+    "Tomato_Early_blight": {
+      "disease_name": "Tomato Early Blight",
+      "crop": "Tomato",
+      "scientific_crop_name": "Solanum lycopersicum L.",
+      "scientific_name": "Alternaria solani",
+      "short_description": "A very common fungal disease of tomato characterized by circular target-like spots with concentric rings, defoliating plants starting from the lower canopy.",
+      "common_symptoms": [
+        "Dark brown circular to oval spots with concentric rings forming a distinct 'target-board' pattern on older leaves.",
+        "Expanding chlorotic yellow halo encircling older lesions.",
+        "Gradual withering, yellowing, and defoliation of lower canopy leaves.",
+        "Dark, sunken, leathery lesions at the stem-end of ripening fruit."
+      ],
+      "immediate_actions": [
+        "Prune off heavily spotted lower leaves and safely discard them away from the field.",
+        "Switch watering to drip or direct root-zone application to avoid foliar wetness.",
+        "Inspect plants for nutritional or moisture stress, which accelerates early blight development."
+      ],
+      "cultural_and_preventive_practices": [
+        "Stake or trellis tomato vines to keep foliage and fruit elevated above the soil.",
+        "Mulch around tomato stems with clean straw or plastic mulch to suppress spore splash from soil.",
+        "Practice a 2- to 3-year crop rotation away from solanaceous plants.",
+        "Remove and burn or deeply bury crop residues after harvest to break the fungal life cycle."
+      ],
+      "biological_control_options": [
+        "Foliar application of registered bio-fungicides containing Trichoderma viride or Bacillus subtilis.",
+        "Incorporate organic compost or bio-fertilizers into the soil to boost overall plant vigor."
+      ],
+      "chemical_control_options": {
+        "status": "officially_verified",
+        "active_ingredients": [
+          {
+            "name": "Mancozeb (e.g., Mancozeb 80% WP, 75% WG)",
+            "type": "Protectant Contact Fungicide (FRAC M03)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Chlorothalonil (e.g., Chlorothalonil 500 g/l SC, 75% WP)",
+            "type": "Protectant Contact Fungicide (FRAC M05)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Copper Oxychloride (e.g., 50% WP)",
+            "type": "Protectant Contact Fungicide (FRAC M01)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          }
+        ],
+        "application_notes": "Apply contact protectant fungicides at the first sign of lower leaf lesions. Ensure uniform foliar coverage on both sides of the leaf. Follow registered dilution and spray volumes on the Sri Lankan product label. Maintain the recommended pre-harvest interval (PHI) and rotate active ingredients.",
+        "authority_guidance": "DOA advises regular scouting during warm, humid intervals; do not spray immediately before rain."
+      },
+      "prevention_tips": [
+        "Water early in the morning so morning sun rapidly dries the leaf canopy.",
+        "Maintain spacing of 50–60 cm between plants for adequate ventilation.",
+        "Avoid handling or working among plants while foliage is wet."
+      ],
+      "reliable_information_sources": [
+        {
+          "title": "Tomato Cultivation & Pest/Disease Management",
+          "institution": "HORDI Gannoruwa, Department of Agriculture Sri Lanka",
+          "url": "https://doa.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Pesticide Recommendations Manual",
+          "institution": "Office of the Registrar of Pesticides (ROP), Sri Lanka",
+          "url": "https://rop.gov.lk",
+          "verification_date": "2026-11-17"
+        }
+      ]
+    },
+    "Tomato_healthy": {
+      "disease_name": "Healthy Tomato Foliage",
+      "crop": "Tomato",
+      "scientific_crop_name": "Solanum lycopersicum L.",
+      "scientific_name": "Solanum lycopersicum L. (Healthy)",
+      "short_description": "Vibrant, vigorously growing tomato foliage with uniform deep green coloration, firm turgor, and no signs of fungal blights, bacterial spots, or viral curling.",
+      "common_symptoms": [
+        "Deep emerald-green leaf pigmentation without chlorosis or yellow mosaic mottling.",
+        "Crisp, smooth leaf margins without necrotic spots or water-soaking.",
+        "Healthy floral trusses and firm, upright vegetative growth."
+      ],
+      "immediate_actions": [
+        "No corrective disease treatment needed.",
+        "Maintain scheduled weekly crop inspections, checking leaf undersides for early pests.",
+        "Verify drip irrigation line performance and ensure balanced soil moisture."
+      ],
+      "cultural_and_preventive_practices": [
+        "Prune lower lateral suckers and foliage up to 20 cm above the soil line to avoid soil-borne contamination.",
+        "Stake or trellis vines securely to ensure upright growth and maximum sunlight penetration.",
+        "Apply fertilizers according to DOA recommendations: basal NPK followed by split top dressings at flowering and fruit set."
+      ],
+      "biological_control_options": [
+        "Apply compost or vermicompost around root zones to maintain beneficial soil microbiome biodiversity.",
+        "Conserve natural beneficial insects (predatory mirid bugs and ladybird beetles) by avoiding unwarranted chemical spraying."
+      ],
+      "chemical_control_options": {
+        "status": "not_applicable",
+        "active_ingredients": [],
+        "application_notes": "No chemical control is required or justified on healthy foliage. The Department of Agriculture Sri Lanka discourages prophylactic chemical spraying on healthy crops to preserve beneficial natural predators, eliminate unnecessary chemical residues, and prevent resistance.",
+        "authority_guidance": "Adhere to Sri Lanka Good Agricultural Practices (SL-GAP) guidelines."
+      },
+      "prevention_tips": [
+        "Maintain regular drip irrigation to prevent moisture swings that cause fruit cracking or blossom-end rot.",
+        "Install yellow sticky traps (1 trap per 100 m²) to detect whitefly or thrips vectors early.",
+        "Sanitize pruning shears with 10% bleach between plants."
+      ],
+      "reliable_information_sources": [
+        {
+          "title": "Good Agricultural Practices (SL-GAP) for Tomato",
+          "institution": "Department of Agriculture (DOA), Sri Lanka",
+          "url": "https://doa.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Safe Pesticide Use and Environmental Safety",
+          "institution": "Safe Use Project, DOA Sri Lanka",
+          "url": "https://safe.doa.gov.lk",
+          "verification_date": "2026-11-17"
+        }
+      ]
+    },
+    "Tomato_Late_blight": {
+      "disease_name": "Tomato Late Blight (Sinhala: Paschimaangamaraya)",
+      "crop": "Tomato",
+      "scientific_crop_name": "Solanum lycopersicum L.",
+      "scientific_name": "Phytophthora infestans",
+      "short_description": "An aggressive, fast-spreading oomycete foliar and fruit blight capable of collapsing entire tomato crops in cool, foggy, or wet up-country and mid-country environments.",
+      "common_symptoms": [
+        "Large, irregular water-soaked pale green to dark brown or purplish-black blotches on leaves.",
+        "Delicate white cottony/downy mold sporulation visible on the undersides of leaves during cool, damp mornings.",
+        "Dark brown greasy lesions extending onto petioles, stems, and fruit.",
+        "Rapid collapse, defoliation, and foul rotting odor across the field under continuous wet weather."
+      ],
+      "immediate_actions": [
+        "Treat as an acute agricultural emergency: inspect fields promptly during cool, damp spells.",
+        "Immediately prune and securely bag heavily infected vines to limit airborne spore showers.",
+        "Never leave infected plant residue in or around the field; destroy or bury deeply."
+      ],
+      "cultural_and_preventive_practices": [
+        "Cultivate late-blight-tolerant tomato varieties recommended by HORDI / DOA Sri Lanka.",
+        "Ensure wide plant and row spacing to maximize airflow and sunlight penetration.",
+        "Avoid overhead irrigation; water exclusively at the root zone via drip lines in the morning.",
+        "Isolate tomato plantings from potato fields, as both share the same aggressive oomycete pathogen."
+      ],
+      "biological_control_options": [
+        "Preventive foliar application of bio-protectants (e.g., Trichoderma formulations) can aid in early vegetative stages, but biological controls alone cannot suppress active epidemic late blight in cool, wet weather."
+      ],
+      "chemical_control_options": {
+        "status": "officially_verified",
+        "active_ingredients": [
+          {
+            "name": "Mancozeb (e.g., Mancozeb 80% WP, 75% WG)",
+            "type": "Protectant Contact Fungicide (FRAC M03)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Chlorothalonil (e.g., Chlorothalonil 500 g/l SC, 75% WP)",
+            "type": "Protectant Contact Fungicide (FRAC M05)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Metalaxyl + Mancozeb (e.g., Metalaxyl 8% + Mancozeb 64% WP)",
+            "type": "Systemic + Contact Combination (FRAC 4 + M03)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Dimethomorph + Mancozeb (e.g., 9% + 60% WP)",
+            "type": "Systemic + Contact Combination (FRAC 40 + M03)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          }
+        ],
+        "application_notes": "The Department of Agriculture mandates an alternating spray strategy: apply contact protectant fungicides (Mancozeb or Chlorothalonil) preventively at 7- to 10-day intervals, and reserve systemic combination products (Metalaxyl + Mancozeb) for active disease pressure at 12- to 14-day intervals. Systemic applications must be restricted to a maximum of 2–3 sprays per crop cycle to prevent pathogen resistance. Comply strictly with registered dilution rates and observe the mandatory 14-day pre-harvest interval (PHI) per Sri Lankan product labels.",
+        "authority_guidance": "Follow local disease advisories issued by HORDI or call the DOA hotline 1920."
+      },
+      "prevention_tips": [
+        "Avoid planting tomatoes in low-lying fog pockets or poorly ventilated valleys.",
+        "Eliminate wild Solanum weeds (e.g., Solanum nigrum) that serve as wild late blight reservoirs.",
+        "Practice strict field hygiene and sanitize stakes and trellising wires between seasons."
+      ],
+      "reliable_information_sources": [
+        {
+          "title": "Late Blight Management in Solanaceous Crops",
+          "institution": "HORDI Gannoruwa / Sita Eliya, DOA Sri Lanka",
+          "url": "https://doa.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Pesticide Recommendations Manual - Oomycete Control",
+          "institution": "Office of the Registrar of Pesticides (ROP), Sri Lanka",
+          "url": "https://rop.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Safe Pesticide Application Protocol",
+          "institution": "Safe Use Project, DOA Sri Lanka",
+          "url": "https://safe.doa.gov.lk",
+          "verification_date": "2026-11-17"
+        }
+      ]
+    },
+    "Tomato_Leaf_Mold": {
+      "disease_name": "Tomato Leaf Mold",
+      "crop": "Tomato",
+      "scientific_crop_name": "Solanum lycopersicum L.",
+      "scientific_name": "Passalora fulva (syn. Cladosporium fulvum)",
+      "short_description": "A fungal foliar disease common in poly-tunnels, greenhouses, and protected agriculture structures in Sri Lanka with high relative humidity and stagnant air.",
+      "common_symptoms": [
+        "Pale green or yellowish diffuse chlorotic spots with indefinite margins on the upper leaf surface.",
+        "Olive-green, velvety, or brown mold growth forming directly beneath the spots on the lower leaf surface.",
+        "Affected leaves turn yellow, curl, wither, and drop prematurely, progressing from lower to upper canopy.",
+        "Floral blossom blight and reduced fruit set under severe humidity."
+      ],
+      "immediate_actions": [
+        "Immediately enhance poly-tunnel ventilation: open roll-up sides, roof vents, or activate exhaust fans.",
+        "Prune off affected lower leaves showing olive-green velvety sporulation and dispose of them outside the tunnel.",
+        "Reduce ambient relative humidity below 85% to halt fungal spore germination."
+      ],
+      "cultural_and_preventive_practices": [
+        "Ensure wide spacing between plants (at least 50–60 cm) in protected culture structures.",
+        "Water strictly via drip irrigation at the soil base; avoid overhead sprinkling or splashing foliage.",
+        "Ventilate poly-tunnels in the early morning to prevent dew formation on the leaf canopy.",
+        "Thoroughly clean and sanitize poly-tunnel plastic, frames, and stakes at the end of each cropping cycle."
+      ],
+      "biological_control_options": [
+        "Preventive foliar application of bio-fungicides based on Bacillus subtilis or Trichoderma species.",
+        "Foliar sprays of potassium bicarbonate or bio-rational organic formulations in greenhouse production."
+      ],
+      "chemical_control_options": {
+        "status": "officially_verified",
+        "active_ingredients": [
+          {
+            "name": "Mancozeb (e.g., Mancozeb 80% WP, 75% WG)",
+            "type": "Protectant Contact Fungicide (FRAC M03)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Chlorothalonil (e.g., Chlorothalonil 500 g/l SC, 75% WP)",
+            "type": "Protectant Contact Fungicide (FRAC M05)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Copper Oxychloride (e.g., 50% WP)",
+            "type": "Protectant Contact Fungicide (FRAC M01)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          }
+        ],
+        "application_notes": "Apply protectant fungicides ensuring thorough spray coverage on the underside of leaves where the velvety olive-green sporulation occurs. Spray when initial upper-leaf chlorosis appears. Follow dilution rates on the registered Sri Lankan product label and observe required pre-harvest intervals (PHI).",
+        "authority_guidance": "DOA Protected Agriculture Division stresses that chemical control is ineffective unless tunnel humidity is concurrently reduced."
+      },
+      "prevention_tips": [
+        "Select tomato varieties possessing Cf resistance genes recommended for greenhouse culture.",
+        "Monitor greenhouse temperature and humidity with a digital thermo-hygrometer.",
+        "Avoid excessive nitrogen fertilization which creates an overly dense, humid vegetative canopy."
+      ],
+      "reliable_information_sources": [
+        {
+          "title": "Protected Agriculture & Poly-tunnel Vegetable Management",
+          "institution": "Protected Agriculture Division / HORDI, DOA Sri Lanka",
+          "url": "https://doa.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Pesticide Recommendations Manual",
+          "institution": "Office of the Registrar of Pesticides (ROP), Sri Lanka",
+          "url": "https://rop.gov.lk",
+          "verification_date": "2026-11-17"
+        }
+      ]
+    },
+    "Tomato_Septoria_leaf_spot": {
+      "disease_name": "Tomato Septoria Leaf Spot",
+      "crop": "Tomato",
+      "scientific_crop_name": "Solanum lycopersicum L.",
+      "scientific_name": "Septoria lycopersici",
+      "short_description": "A damaging fungal leaf spot disease of tomato producing numerous small spots with dark borders and tan-gray centers containing tiny black fruiting specks.",
+      "common_symptoms": [
+        "Numerous small (1.5–3 mm) circular spots with dark brown to black borders and light-gray or tan centers.",
+        "Tiny black speck-like fruiting bodies (pycnidia) clearly visible in the centers of mature spots under close inspection.",
+        "Leaves yellow around spots, dry up, and drop prematurely, progressing rapidly from the ground up.",
+        "Severe defoliation exposes tomato fruit to sunscald."
+      ],
+      "immediate_actions": [
+        "Hand-pick and remove infected lower leaves showing pycnidia and discard them safely away from the garden.",
+        "Avoid touching or pruning healthy plants when the foliage is wet.",
+        "Switch all watering to ground-level drip or furrow irrigation to stop water-splash spore spread."
+      ],
+      "cultural_and_preventive_practices": [
+        "Mulch the base of tomato plants with clean straw or plastic mulch to create a barrier against soil splash.",
+        "Enforce a 2- to 3-year crop rotation schedule away from solanaceous plants.",
+        "Stake and prune tomato vines to keep foliage elevated and promote rapid leaf drying.",
+        "Plow under or thoroughly remove post-harvest crop debris to break the fungal life cycle."
+      ],
+      "biological_control_options": [
+        "Soil amendment with Trichoderma viride to suppress overwintering pathogen inoculum in crop residue.",
+        "Preventive foliar application of Bacillus subtilis-based bio-fungicides."
+      ],
+      "chemical_control_options": {
+        "status": "officially_verified",
+        "active_ingredients": [
+          {
+            "name": "Mancozeb (e.g., Mancozeb 80% WP, 75% WG)",
+            "type": "Protectant Contact Fungicide (FRAC M03)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Chlorothalonil (e.g., Chlorothalonil 500 g/l SC, 75% WP)",
+            "type": "Protectant Contact Fungicide (FRAC M05)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Copper Oxychloride (e.g., 50% WP)",
+            "type": "Protectant Contact Fungicide (FRAC M01)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          }
+        ],
+        "application_notes": "Apply contact protectant fungicides at the first sign of lower-leaf circular spots. Ensure thorough spray coverage across the canopy. Repeat as warranted during rainy periods according to registered label intervals. Comply strictly with product label pre-harvest intervals (PHI).",
+        "authority_guidance": "DOA guidelines emphasize early-season preventative protection; do not delay spray until defoliation has reached the mid-canopy."
+      },
+      "prevention_tips": [
+        "Eradicate nightshade weed hosts (e.g., Solanum nigrum) around field borders.",
+        "Water early in the morning so the morning sun rapidly dries leaf surfaces.",
+        "Provide ample spacing between rows (at least 60 cm) to allow vigorous airflow."
+      ],
+      "reliable_information_sources": [
+        {
+          "title": "Tomato Disease Management Guidelines",
+          "institution": "HORDI Gannoruwa, Department of Agriculture Sri Lanka",
+          "url": "https://doa.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Pesticide Recommendations Manual",
+          "institution": "Office of the Registrar of Pesticides (ROP), Sri Lanka",
+          "url": "https://rop.gov.lk",
+          "verification_date": "2026-11-17"
+        }
+      ]
+    },
+    "Tomato_Spider_mites_Two_spotted_spider_mite": {
+      "disease_name": "Two-Spotted Spider Mite Damage",
+      "crop": "Tomato",
+      "scientific_crop_name": "Solanum lycopersicum L.",
+      "scientific_name": "Tetranychus urticae (Acarina: Tetranychidae)",
+      "short_description": "Microscopic sap-feeding arachnid pests that proliferate rapidly in hot, dry, and dusty weather, piercing leaf cells and weaving fine webs on tomato foliage.",
+      "common_symptoms": [
+        "Fine, chlorotic yellow, white, or bronze stippling specks across the upper leaf surface.",
+        "Delicate silken webbing visible on leaf undersides, growing tips, and floral clusters.",
+        "Leaves turn yellow, take on a bronzed or scorched papery appearance, and wither.",
+        "Stunted vine growth and premature leaf drop under heavy mite infestation."
+      ],
+      "immediate_actions": [
+        "Spray the undersides of leaves firmly with a forceful stream of clean water to physically dislodge mites and destroy webs.",
+        "Prune off and safely dispose of heavily webbed shoot tips or leaf clusters.",
+        "Dampen surrounding pathways and field borders to suppress dust (dust favors mite multiplication)."
+      ],
+      "cultural_and_preventive_practices": [
+        "Avoid plant water stress; well-hydrated tomato crops resist mite proliferation far better than drought-stressed plants.",
+        "Mulch bare soil to minimize dust generation from foot or tractor traffic.",
+        "Weed surrounding field borders to eliminate alternate weed hosts (such as Amaranthus and wild nightshades)."
+      ],
+      "biological_control_options": [
+        "Conserve and encourage natural predatory mites (e.g., Phytoseiulus persimilis, Neoseiulus californicus) and predatory ladybirds (Stethorus spp.).",
+        "Apply botanical neem seed water extract (NSKE 5%) or commercial azadirachtin formulations to deter feeding and disrupt mite reproduction."
+      ],
+      "chemical_control_options": {
+        "status": "officially_verified",
+        "active_ingredients": [
+          {
+            "name": "Abamectin (e.g., Abamectin 18 g/l EC)",
+            "type": "Acaricide / Insecticide with translaminar activity",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Sulphur (e.g., Sulphur 80% WP, 80% WG)",
+            "type": "Protectant Contact Acaricide / Fungicide",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          }
+        ],
+        "application_notes": "Abamectin provides translaminar activity, penetrating leaf tissue to reach mites feeding on the underside. When using Sulphur, ensure ambient temperature is below 32°C; application during intense hot sunshine can cause severe foliage scorch/phytotoxicity. Direct spray thoroughly to the undersides of leaves. Alternate acaricides with different modes of action to prevent rapid resistance buildup. Adhere strictly to the pre-harvest interval (PHI) on the registered product label.",
+        "authority_guidance": "DOA cautions against using broad-spectrum synthetic pyrethroids, which kill beneficial predatory mites and cause secondary spider mite flare-ups."
+      },
+      "prevention_tips": [
+        "Routinely inspect leaf undersides using a 10x hand magnifying lens during dry, warm weather.",
+        "Maintain adequate drip irrigation to keep plants vigorous.",
+        "Isolate poly-tunnels or greenhouses and install fine mesh screens to restrict mite entry."
+      ],
+      "reliable_information_sources": [
+        {
+          "title": "Mite Pest Management in Vegetable Crops",
+          "institution": "HORDI Gannoruwa / Division of Entomology, DOA Sri Lanka",
+          "url": "https://doa.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Pesticide Recommendations Manual - Acaricides",
+          "institution": "Office of the Registrar of Pesticides (ROP), Sri Lanka",
+          "url": "https://rop.gov.lk",
+          "verification_date": "2026-11-17"
+        }
+      ]
+    },
+    "Tomato__Target_Spot": {
+      "disease_name": "Tomato Target Spot",
+      "crop": "Tomato",
+      "scientific_crop_name": "Solanum lycopersicum L.",
+      "scientific_name": "Corynespora cassiicola",
+      "short_description": "A fungal foliar and fruit spot disease favored by warm, humid tropical climates in Sri Lanka, producing circular lesions with light brown centers and faint concentric zonation.",
+      "common_symptoms": [
+        "Small pinpoint brown spots that expand into circular brown lesions with light-brown/tan centers and darker margins.",
+        "Faint concentric rings visible inside lesions, giving a target-like appearance.",
+        "Chlorotic yellowing around lesions, leading to extensive leaf senescence and defoliation.",
+        "Dark, sunken, circular lesions on green and ripening fruit."
+      ],
+      "immediate_actions": [
+        "Prune off affected lower leaves showing target lesions and discard them away from the cropping area.",
+        "Improve canopy ventilation by trimming crowding suckers.",
+        "Avoid overhead irrigation; water strictly at ground level."
+      ],
+      "cultural_and_preventive_practices": [
+        "Stake tomato vines upright to enhance airflow and promote rapid drying after rainfall.",
+        "Maintain adequate plant spacing (at least 60 cm between rows).",
+        "Mulch beneath plants to suppress soil splash onto lower foliage.",
+        "Remove and safely burn or bury post-harvest tomato vines to prevent pathogen survival in debris."
+      ],
+      "biological_control_options": [
+        "Foliar applications of bio-fungicides based on Trichoderma or Bacillus subtilis during early vegetative stages.",
+        "Soil amendment with well-cured compost to foster competitive soil microorganisms."
+      ],
+      "chemical_control_options": {
+        "status": "officially_verified",
+        "active_ingredients": [
+          {
+            "name": "Chlorothalonil (e.g., Chlorothalonil 500 g/l SC, 75% WP)",
+            "type": "Protectant Contact Fungicide (FRAC M05)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Mancozeb (e.g., Mancozeb 80% WP, 75% WG)",
+            "type": "Protectant Contact Fungicide (FRAC M03)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          }
+        ],
+        "application_notes": "Apply protectant fungicides upon the first detection of symptoms when weather is warm and humid. Ensure uniform canopy coverage. Comply with registered dilution rates and spray volumes on the Sri Lankan product label. Maintain label pre-harvest intervals (PHI).",
+        "authority_guidance": "DOA advises alternating protectant fungicides to maintain long-term chemical efficacy."
+      },
+      "prevention_tips": [
+        "Rotate crops every 2 to 3 years away from solanaceous and cucurbit crops.",
+        "Avoid excessive nitrogen fertilization that creates dense, moist foliage.",
+        "Choose disease-tolerant tomato cultivars recommended by HORDI."
+      ],
+      "reliable_information_sources": [
+        {
+          "title": "Tomato Fungal Disease Management Guide",
+          "institution": "HORDI Gannoruwa, Department of Agriculture Sri Lanka",
+          "url": "https://doa.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Pesticide Recommendations Manual",
+          "institution": "Office of the Registrar of Pesticides (ROP), Sri Lanka",
+          "url": "https://rop.gov.lk",
+          "verification_date": "2026-11-17"
+        }
+      ]
+    },
+    "Tomato__Tomato_mosaic_virus": {
+      "disease_name": "Tomato Mosaic Virus (ToMV)",
+      "crop": "Tomato",
+      "scientific_crop_name": "Solanum lycopersicum L.",
+      "scientific_name": "Tomato mosaic virus (Tobamovirus)",
+      "short_description": "A highly stable, mechanically transmitted plant virus causing leaf mottling, blistering, distortion, and plant stunting. It spreads readily via hands, tools, and contaminated seed.",
+      "common_symptoms": [
+        "Light and dark green mottled mosaic patterning across leaflets.",
+        "Leaf distortion, leaf curling, blistering, or 'fern-leaf' (shoestring) narrowing.",
+        "Stunting of vegetative growth and reduced flower and fruit set.",
+        "Internal brown browning (vascular necrosis) inside developing fruit."
+      ],
+      "immediate_actions": [
+        "Immediately rogue out and bag infected plants (including roots) and destroy them (burn or bury deeply).",
+        "Never compost virus-infected plants; the virus is exceptionally stable and persists in compost.",
+        "Thoroughly wash hands and sanitize all tools with soap and water or 10% trisodium phosphate (TSP) before touching healthy plants."
+      ],
+      "cultural_and_preventive_practices": [
+        "Sanitize hands and pruning tools by dipping in a 20% non-fat dry milk solution or 10% TSP during transplanting and pruning.",
+        "Strictly prohibit smoking, chewing, or handling tobacco products near tomato crops (tobacco can carry related tobamoviruses).",
+        "Enforce a 2-year crop rotation away from solanaceous crops in fields with past infection history.",
+        "Remove Solanaceous weed hosts (such as Physalis and Solanum weeds) around the field."
+      ],
+      "biological_control_options": [
+        "No biological control or bio-pesticide can cure a systemic viral infection once inside the plant.",
+        "Prevention relies entirely on resistant cultivars and strict nursery phytosanitation."
+      ],
+      "chemical_control_options": {
+        "status": "unavailable_no_chemical_cure",
+        "active_ingredients": [],
+        "application_notes": "Chemical control is unavailable. There are NO registered chemical fungicides, bactericides, or viricides capable of curing viral infections in plant tissue. Applying chemical sprays against viral pathogens is completely ineffective and causes unwarranted environmental and financial loss.",
+        "authority_guidance": "DOA Sri Lanka strongly advises strict rogueing of infected plants, tool disinfection, and consulting your local Agricultural Instructor (AI) at the nearest Agrarian Services Centre for sanitation protocols."
+      },
+      "prevention_tips": [
+        "Use certified virus-free seed or hot-water-treated seed from trusted seed producers.",
+        "Plant ToMV-resistant tomato cultivars carrying the Tm-2 or Tm-2^2 resistance gene recommended by DOA.",
+        "Disinfect nursery trays, bench surfaces, and greenhouse stakes with 10% bleach before every season."
+      ],
+      "reliable_information_sources": [
+        {
+          "title": "Management of Viral Diseases in Tomato",
+          "institution": "HORDI Gannoruwa, Department of Agriculture Sri Lanka",
+          "url": "https://doa.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Tomato Mosaic Virus Technical Advisory",
+          "institution": "PlantwisePlus Knowledge Bank / CABI Sri Lanka Extension",
+          "url": "https://plantwiseplusknowledgebank.org",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "DOA Agricultural Advisory Hotline",
+          "institution": "Department of Agriculture Sri Lanka",
+          "url": "tel:1920",
+          "verification_date": "2026-11-17"
+        }
+      ]
+    },
+    "Tomato__Tomato_YellowLeaf__Curl_Virus": {
+      "disease_name": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+      "crop": "Tomato",
+      "scientific_crop_name": "Solanum lycopersicum L.",
+      "scientific_name": "Tomato yellow leaf curl virus (Begomovirus)",
+      "short_description": "A devastating viral disease transmitted by the silverleaf whitefly (Bemisia tabaci), producing dramatic upward leaf cupping, chlorosis, severe stunting, and flower abortion.",
+      "common_symptoms": [
+        "Severe upward cupping, curling, and crinkling of young leaflets.",
+        "Marked chlorotic yellowing along leaf margins and interveinal tissue.",
+        "Dramatically reduced leaf size and stunted, bushy, upright plant architecture.",
+        "Heavy blossom drop; infected plants fail to set marketable fruit."
+      ],
+      "immediate_actions": [
+        "Promptly rogue out and destroy early symptomatic plants; rogueing removes the viral reservoir before whiteflies spread it.",
+        "Install yellow sticky traps (1 trap per 100 m²) to monitor and capture adult whiteflies.",
+        "Check nursery beds for whiteflies; never transplant seedlings showing leaf curling or whitefly presence."
+      ],
+      "cultural_and_preventive_practices": [
+        "Establish living barrier crops: plant 3–4 dense border rows of tall non-host crops (maize, sorghum, or pearl millet) around the tomato plot 3 weeks prior to planting to intercept incoming whiteflies as recommended by DOA.",
+        "Cover nursery seedling beds with fine insect-proof nylon netting (50-mesh) from day 1 to protect seedlings from viruliferous whiteflies.",
+        "Eliminate alternate weed hosts (such as Euphorbia heterophylla, Ageratum conyzoides, and Abutilon indicum) surrounding the fields.",
+        "Implement a crop-free break period (at least 4–6 weeks) between consecutive solanaceous seasons."
+      ],
+      "biological_control_options": [
+        "Foliar sprays of botanical Neem Seed Kernel Extract (NSKE 5%) or commercial azadirachtin to deter whitefly feeding and egg laying.",
+        "Conserve natural predators such as predatory mirid bugs (Nesidiocoris tenuis) and parasitic wasps (Encarsia and Eretmocerus species)."
+      ],
+      "chemical_control_options": {
+        "status": "officially_verified",
+        "active_ingredients": [
+          {
+            "name": "Imidacloprid (e.g., 200 g/l SL)",
+            "type": "Systemic Neonicotinoid Insecticide (targeting Whitefly vector)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          },
+          {
+            "name": "Acetamiprid (e.g., 20% SP)",
+            "type": "Systemic Neonicotinoid Insecticide (targeting Whitefly vector)",
+            "rop_status": "Registered under the Registrar of Pesticides Sri Lanka"
+          }
+        ],
+        "application_notes": "Important: Chemical insecticides DO NOT cure the viral pathogen; they strictly manage the whitefly insect vector (Bemisia tabaci) to slow disease transmission. Apply only when whitefly monitoring thresholds warrant intervention. Rotate insecticide modes of action to prevent rapid whitefly resistance. Comply strictly with registered label rates, spray volumes, and the mandatory pre-harvest interval (PHI).",
+        "authority_guidance": "DOA emphasizes that chemical spraying must be integrated with border barrier crops, yellow sticky traps, and rogueing. For threshold guidelines, consult the local Agrarian Services Centre."
+      },
+      "prevention_tips": [
+        "Grow TYLCV-resistant or tolerant tomato hybrid cultivars recommended by HORDI / DOA Sri Lanka.",
+        "Produce seedlings exclusively inside 50-mesh insect-proof net houses.",
+        "Monitor whitefly populations weekly using yellow sticky cards placed just above the plant canopy."
+      ],
+      "reliable_information_sources": [
+        {
+          "title": "Integrated Management of Tomato Yellow Leaf Curl Virus (TYLCV)",
+          "institution": "HORDI Gannoruwa, Department of Agriculture Sri Lanka",
+          "url": "https://doa.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "Pesticide Recommendations Manual - Sucking Pest Control",
+          "institution": "Office of the Registrar of Pesticides (ROP), Sri Lanka",
+          "url": "https://rop.gov.lk",
+          "verification_date": "2026-11-17"
+        },
+        {
+          "title": "DOA Agriculture Advisory Hotline",
+          "institution": "Department of Agriculture Sri Lanka",
+          "url": "tel:1920",
+          "verification_date": "2026-11-17"
+        }
+      ]
+    }
+  }
+}
